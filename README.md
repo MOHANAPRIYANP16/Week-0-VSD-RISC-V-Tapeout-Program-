@@ -45,7 +45,8 @@ Download the latest:
   Open a terminal and run (replace `yyyy-mm-dd` with the actual date in the filename):
   ```bash
    cd ~/Downloads
-  tar -xvzf oss-cad-suite-linux-x64-yyyy-mm-dd.tgz -C ~/ 
+tar -xvzf oss-cad-suite-linux-x64-*.tgz -C ~/
+
   ```
   This will create a folder like:
   ```bash
@@ -91,3 +92,13 @@ Download the latest:
       ![yosys](week_0/yosys.png)
 
 ---
+
+# Iverilog Installation:
+
+ ```bash
+   sudo apt-get install iverilog
+  ```
+ Verify Installation:
+ ![iverlog](week_0/iverilog.png)
+ ![iverlog](week_0/iverilog.png)
+ 
