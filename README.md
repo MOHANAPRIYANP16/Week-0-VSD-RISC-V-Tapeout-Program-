@@ -123,7 +123,14 @@ Run :
   sudo apt update
 sudo apt install gtkwave
 ```
+Verify Installation:
+
+Run:
+```bash
+  gtkwave
+```
 You should see something like :
 
 ![gtkwave](week_0/gtkwave.png)
 
+---
