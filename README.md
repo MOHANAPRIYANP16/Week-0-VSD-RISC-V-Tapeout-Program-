@@ -80,5 +80,5 @@ If you run:
 `yosys`
 
 You should see something like :
-![yosys](week0/yosys.png)
+![yosys](week 0/yosys.png)
 
