@@ -26,7 +26,7 @@ The following tools were installed for RTL synthesis, simulation, waveform visua
 
 ---
 
-# Install Yosys on Linux
+ # 🧠 Install Yosys on Linux
 
 This guide shows how to install **Yosys** using the **OSS CAD Suite** on Zorin OS (Ubuntu-based).  
 The OSS CAD Suite provides the latest Yosys along with other FPGA tools.
@@ -93,12 +93,37 @@ tar -xvzf oss-cad-suite-linux-x64-*.tgz -C ~/
 
 ---
 
-# Iverilog Installation:
+ # 🧠 Iverilog Installation:
 
  ```bash
-   sudo apt-get install iverilog
+   sudo apt update
+   sudo apt install iverilog
   ```
  Verify Installation:
- ![iverlog](week_0/iverilog.png)
+ Run:
+ ```bash
+   iverilog
+  ```
+You should see something like :
+
  ![iverlog](week_0/iverilog.png)
  
+ Run :
+ 
+ ```bash
+   iverilog -v
+  ```
+You should see something like :
+
+![iverlog](week_0/iverlog-v.png)
+ 
+ # 🧠 GTKWAVE Installation:
+Run :
+```bash
+  sudo apt update
+sudo apt install gtkwave
+```
+You should see something like :
+
+![gtkwave](week_0/gtkwave.png)
+
