@@ -42,43 +42,52 @@ Download the latest:
 ---
 
 ## 2. Extract the Archive
-Open a terminal and run (replace `yyyy-mm-dd` with the actual date in the filename):
-```bash
-` cd ~/Downloads
-tar -xvzf oss-cad-suite-linux-x64-yyyy-mm-dd.tgz -C ~/ `
-```
-This will create a folder like:
+  Open a terminal and run (replace `yyyy-mm-dd` with the actual date in the filename):
+  ```bash
+   cd ~/Downloads
+  tar -xvzf oss-cad-suite-linux-x64-yyyy-mm-dd.tgz -C ~/ 
+  ```
+  This will create a folder like:
+  ```bash
+  ~/oss-cad-suite
+  ```
+---
+## 3. Set Up the Environment
+  Permanent (recommended)
 
-`~/oss-cad-suite`
+  Edit your ~/.bashrc (or ~/.zshrc if you use Zsh):
+   ```bash
+    gedit ~/.bashrc
+   ```
 
-3. Set Up the Environment
-4. Permanent (recommended)
-
-Edit your ~/.bashrc (or ~/.zshrc if you use Zsh):
-`gedit ~/.bashrc`
-
-Add this line at the bottom of the gedit file and save the file  :
-
-`export PATH="$HOME/oss-cad-suite/bin:$PATH"`
+  Add this line at the bottom of the gedit file and save the file  :
+  ```bash
+    export PATH="$HOME/oss-cad-suite/bin:$PATH"
+  ```
 
 
-Then cancel the gedit file and command on terminal:
+  Then cancel the gedit file and command on terminal:
+  ```bash
+    source ~/.bashrc
+  ```
+---
+## 4. Verify Installation
 
-`source ~/.bashrc`
+   Run:
+   ```bash
+   yosys -V
+   ```
 
-4. Verify Installation
+  You should see something like:
+  ```bash
+   Yosys 0.57+148 (git sha1 259bd6fb3, clang++ 18.1.8 -fPIC -O3)
+  ```
 
-Run:
+  If you run:
+  ```bash
+  yosys
+  ```
+  You should see something like :
+      ![yosys](week_0/yosys.png)
 
-`yosys -V`
-
-You should see something like:
-
-`Yosys 0.57+148 (git sha1 259bd6fb3, clang++ 18.1.8 -fPIC -O3)`
-
-If you run:
-`yosys`
-
-You should see something like :
-![yosys](week 0/yosys.png)
-
+---
