@@ -7,14 +7,19 @@ This week, I focused on **setting up the development environment** and installin
 
 ---
 
-## 🎯 System & Virtual Machine Configuration  
+## 🎯 System configuration 
+## System Information:
 
-| Specification 💻 | Details 📋 |
-|------------------|------------|
-| Operating System 🐧 | Ubuntu 20.04+ |
-| RAM 💾 | 6 GB |
-| Storage 💿 | 50 GB HDD |
-| vCPUs ⚡ | 4 |
+| **Component**     | **Details**                                   |
+|--------------------|-----------------------------------------------|
+| Hardware Model     | HP HP Laptop 15s-du1xxx                      |
+| Memory             | 8.0 GiB                                      |
+| Processor          | Intel® Core™ i3-10110U CPU @ 2.10GHz × 4     |
+| Graphics           | Mesa Intel® UHD Graphics (CML GT2)           |
+| Disk Capacity      | 1.0 TB                                       |
+| OS Name            | Zorin OS 17.3 Core                           |
+| OS Type            | 64-bit                                       |
+| Windowing System   | Wayland                                      |
 
 💡 *This setup ensures smooth toolchain operation and efficient simulations.*  
 
@@ -42,7 +47,7 @@ Download the latest:
 ---
 
 ## 2. Extract the Archive
-  Open a terminal and run (replace `yyyy-mm-dd` with the actual date in the filename):
+  Open a terminal and run :
   ```bash
    cd ~/Downloads
 tar -xvzf oss-cad-suite-linux-x64-*.tgz -C ~/
