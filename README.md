@@ -99,19 +99,26 @@ tar -xvzf oss-cad-suite-linux-x64-*.tgz -C ~/
 ---
 
  # 🧠 Iverilog Installation:
-
+ 
+ Iverilog is included with the OSS-CAD Suite, but the issue is that it ships with the latest version 13, which is not considered stable according to   Iverilog’s documentation.
+ To resolve this, we need to manually roll back to a stable release. This can be done by removing all Iverilog files that come bundled with the OSS-CAD Suite (using the search function can make this easier).
+ 
+ installation:
+ 
+ Run:
  ```bash
    sudo apt update
    sudo apt install iverilog
   ```
  Verify Installation:
+
  Run:
  ```bash
    iverilog
   ```
 You should see something like :
 
- ![iverlog](week_0/iverilog.png)
+ ![iverlog](week_0/iverilog0.png)
  
  Run :
  
@@ -120,9 +127,15 @@ You should see something like :
   ```
 You should see something like :
 
-![iverlog](week_0/iverlog-v.png)
+![iverlog](week_0/iverilog-v(satble).png)
  
  # 🧠 GTKWAVE Installation:
+ 
+ GTKWave is also included in the OSS-CAD Suite, but in this case it comes with version 3.4.0, which is stable.
+ However, to be on the safe side, it is recommended to remove the GTKWave files located inside the OSS-CAD Suite directory.
+ 
+installation: 
+
 Run :
 ```bash
   sudo apt update
@@ -136,6 +149,6 @@ Run:
 ```
 You should see something like :
 
-![gtkwave](week_0/gtkwave.png)
+![gtkwave](week_0/gtkwave0.png)
 
 ---
